@@ -19,8 +19,6 @@ export const GlobalData = ()=>
                     Total number of Weddings
                     </span>
                 </span>
-                    {/* <h5 style={{width: '31px', fontFamily : 'Poppins' , fontWeigth  : '500' , color :'orange' , fontSize : '16px' }}></h5>
-                    <h5  style={{width: '120px', fontFamily : 'Poppins' , fontWeigth  : '600' , color :'black', fontSize : '10px'}}></h5> */}
                 </div>
                 <div style={{ marginLeft : '23px',  marginTop: '10px'  ,height : '70px' , marginBottom : '19px' , display : 'flex'}}>
                 <span>

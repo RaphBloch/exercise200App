@@ -77,6 +77,7 @@ export const WeddingRow = (props) =>
 
     
     
+    
     return(
         <Fragment>
             <TableRow style={{backgroundColor : '#F8F8F9'}}>

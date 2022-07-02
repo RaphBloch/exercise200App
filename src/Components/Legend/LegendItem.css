@@ -1,0 +1,18 @@
+h3 
+{
+    letter-spacing : '0.2px';
+    width : '111px';
+    font-family: 'Poppins';
+    font-weight : '600';
+    font-size : '18px';
+    margin: 8px 4px;
+    height: '22px';
+}
+
+#legend 
+{
+    border : '1px';
+    width: '8px' ;
+    height : '20px' ;
+    margin-top : 8px ;
+}

@@ -79,7 +79,7 @@ export const MainPage = (props) =>
                 <div>
                 <Legend></Legend>
                 </div>
-                <div style={{display : 'flex' , position : 'absolute' , left: '76%',marginRight : 'auto'}}>
+                <div style={{display : 'flex' , position : 'absolute' , left: '76.5%',marginRight : 'auto'}}>
                         <div style={{marginTop : '10px'}} >
                         <img src={Excel}  alt='Rien'/>
                         </div>

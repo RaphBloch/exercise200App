@@ -9,7 +9,8 @@ export const LegendItem = (props) =>
 
     return(
         <div style={{display : 'flex'}}>
-             <div id='legend' style={{backgroundColor : color}}>
+             <div style={{  border : '1px',width: '8px',height : '20px',marginTop : '8px',
+                backgroundColor : color}}>
                 
              </div>
             <h3>{delay}</h3>

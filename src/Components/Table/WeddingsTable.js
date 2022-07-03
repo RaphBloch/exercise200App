@@ -11,7 +11,7 @@ import TablePagination from "@mui/material/TablePagination";
 import { WeddingRow  } from "./WeddingRow";
 import TablePaginationActions from "@mui/material/TablePagination/TablePaginationActions";
 import { useState } from "react";
-
+import './WeddingRow.css';
 
 
 
@@ -57,10 +57,9 @@ export const WeddingTable = (props) =>
             return (
               <TableCell
                 key={index}
-                style={{}}
                 align="center"
               >
-                <h3 style={{fontWeight : '600' , fontSize : '18px', height : '18px' , fontFamily : 'Poppins'}}>{item}</h3>
+                <h3>{item}</h3>
               </TableCell>
             );
           })}

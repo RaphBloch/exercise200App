@@ -1,5 +1,5 @@
-import { weddings } from "../../Data/weddingsData";
-
+import { weddings } from "../../mocks/weddingsData";
+import './GlobalData.css';
 
 
 
@@ -13,18 +13,18 @@ export const GlobalData = ()=>
         <div style={{display : 'flex',  backgroundColor : '#F8F8F9',flexDirection : 'column' , width : '221px' , height: '142px' , borderRadius : '5px' }}>
                 <div style={{ marginLeft: '10px', marginTop: '10px' , height : '50px' , display : 'flex'}}>
                 <span>
-                 <span style={{width: '31px', fontFamily : 'Poppins' , fontWeigth  : '700' , color :'#F7B500' , fontSize : '22px', marginLeft: '-150px'}}>{weddings.length}</span><br/>
-                    <span style={{fontFamily : 'Poppins' , fontSize : '16px' , fontWeight : '600' , 
-                    marginLeft: '10px' , color: 'black'}}>
+                 <span style={{width: '31px', fontWeigth  : '700' , color :'#F7B500' , fontSize : '22px', marginLeft: '-157px'}}>{weddings.length}</span><br/>
+                    <span style={{fontSize : '16px' , fontWeight : '600' , 
+                    marginLeft: '12px' , color: 'black'}}>
                     Total number of Weddings
                     </span>
                 </span>
                 </div>
                 <div style={{ marginLeft : '23px',  marginTop: '10px'  ,height : '70px' , marginBottom : '19px' , display : 'flex'}}>
                 <span>
-                    <span style={{fontFamily : 'Poppins' , fontSize : '22px' , fontWeight : '700' , color: '#44D7B6'}}>$<span>{money}</span></span>
+                    <span style={{fontSize : '22px' , fontWeight : '700' , color: '#44D7B6'}}>$<span>{money}</span></span>
                     <br/>
-                    <span style={{fontFamily : 'Poppins' , fontSize : '16px' , fontWeight : '600' , color: 'black' , marginLeft : '-12px'}}>Total Price</span>
+                    <span style={{ fontSize : '16px' , fontWeight : '600' , color: 'black' , marginLeft : '-3px'}}>Total Price</span>
                 </span>
                 </div>
         </div>

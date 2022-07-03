@@ -1,47 +1,18 @@
 
 import Grid from "@mui/material/Grid";
 import SearchIcon from '@mui/icons-material/Search';
-import InputLabel from '@mui/material/InputLabel';
-import FormControl from '@mui/material/FormControl';
 import Select from 'react-select';
-import Input from '@mui/material/Input';
 import FilterListIcon from '@mui/icons-material/FilterList';
-import MenuItem from '@mui/material/MenuItem';
-import Checkbox from '@mui/material/Checkbox';
 import TextField from '@mui/material/TextField';
 import ListItemText from '@mui/material/ListItemText';
-//import ReactMultiSelectCheckboxes from 'react-multiselect-checkboxes';
 import React,{useState} from 'react';
-import { stepClasses } from "@mui/material";
 import Go from './../../assets/GO.png';
-
+import './SearchAndFilter.css';
 
 
 export const SearchAndFilter = (props) => 
 {
     
-
-
-    const [searchOption,setSearchOption]= useState('names');
-    const [selectOption,setSelectOption] = useState('Long Time');
-
-    const options = [
-        { label: "Names", value: 'names' },
-        { label: "Date", value: 'date' },
-        { label: "EMail", value: 'mail' }
-      ];
-
-
-   
-    const filterHandleChange = (event) => 
-    {
-        setSelectOption(event.value);
-        props.onStatusFilter(event.value);
-    }
-    const handleChange = (event) => 
-    {
-        setSearchOption(event.value);
-    } 
 
     const style = {
         control: base => ({
@@ -52,6 +23,17 @@ export const SearchAndFilter = (props) =>
         })
       };
 
+    const [searchOption,setSearchOption]= useState('names');
+    const [selectOption,setSelectOption] = useState('Long Time');
+
+    const options = [
+        { label: "Names", value: 'names' },
+        { label: "Date", value: 'date' },
+        { label: "EMail", value: 'mail' }
+      ];
+
+     
+
       
     const statusOptions = [
         { label: "Long", value: 'Long Time' },
@@ -60,13 +42,26 @@ export const SearchAndFilter = (props) =>
         {label : 'Finished', value : 'Finished'}
     ];
 
+   
+    const filterHandleChange = (event) => 
+    {
+        setSelectOption(event.value);
+        props.onStatusFilter(event.value);
+    }
+    const searchHandleChange = (event) => 
+    {
+        setSearchOption(event.value);
+    } 
+
+    
+
 
     return(
         <div style={{ display:'flex', flexDirection: 'column' ,borderRadius : '5px',width : '993px' ,height : '142px' , backgroundColor: '#F8F8F9'}}>
             <div style={{flexGrow : '1'}}>
                 <div style={{ alignItems : 'center', marginLeft: '33px'}}>
                     <SearchIcon style={{position : 'absolute', left : '20%' , marginTop : '30px', height : '30px'}}></SearchIcon>
-                    <h3  style={{position : 'absolute', left : '22%' , marginTop : '35px' ,fontFamily : 'Poppins'}}>Search By :</h3>
+                    <h3  style={{position : 'absolute', left : '22%' , marginTop : '35px'}}>Search By :</h3>
                 </div>
                 
                 <div style={{ alignItems : 'center' ,  position : 'absolute', left : '27%' , marginTop : '25px'}}>
@@ -76,7 +71,7 @@ export const SearchAndFilter = (props) =>
                         value={options.filter(function(option) {
                             return option.value === searchOption;
                         })}
-                        onChange={handleChange}>
+                        onChange={searchHandleChange}>
                         </Select>
                 </div>
 
@@ -101,7 +96,7 @@ export const SearchAndFilter = (props) =>
                 <div style={{alignItems : 'center'}}>
                     <FilterListIcon style={{position : 'absolute', left : '20%', color : '#616A82' ,  marginTop: '18px' ,height : '30px'}}>
                     </FilterListIcon>
-                    <h3  style={{position : 'absolute', fontFamily : 'Poppins' ,  color : '#616A82', left : '22%' , marginTop : '23px'}}>Filter By :</h3>
+                    <h3  style={{position : 'absolute', color : '#616A82', left : '22%' , marginTop : '23px'}}>Filter By :</h3>
                 </div>
                 <div style={{ alignItems : 'center' , height : '10px', width: '120px' , position : 'absolute', left : '27%' , marginTop : '15px'}}>
                   
@@ -115,7 +110,7 @@ export const SearchAndFilter = (props) =>
                   
                   </Select>
                 </div>
-                <div style={{position : 'absolute', left : '40%' , marginTop : '5px'}}>
+                <div style={{position : 'absolute', left : '40%' , marginTop : '17px'}}>
                     <h3>Price</h3>
                 </div>
                 <div style={{position : 'absolute', left : '65%' , marginTop : '25px'}}>

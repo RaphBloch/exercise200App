@@ -20,7 +20,7 @@ export const weddings = [
         'guests' : 200,
         'mail'   : 'meirmihal@gmail.com',
         'date' : '2022-07-08',
-        'price' : 800000,
+        'price' : 80000,
         'status' : 'Middle Time' 
     },
     {

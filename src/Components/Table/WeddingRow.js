@@ -69,9 +69,6 @@ export const WeddingRow = (props) =>
             }
         }
         
-        
-       
-
     }
 
 
@@ -81,11 +78,6 @@ export const WeddingRow = (props) =>
     return(
         <Fragment>
             <TableRow style={{backgroundColor : '#F8F8F9'}}>
-                {/* <TableCell align='center'>
-                    <div style={{color : statusColor}}>
-                        <BorderColorIcon/>
-                    </div>
-                </TableCell> */}
                 <TableCell align="center" >
                 <h3 style={{}}>{wedding.names}</h3>
                 </TableCell>
@@ -100,10 +92,10 @@ export const WeddingRow = (props) =>
                 </TableCell>
                 <TableCell align="center">
                     <span>
-                         <span style={{fontWeight : '600' , fontSize : '14px' , fontFamily : 'Poppins'}} >$<span> {paid}</span></span>
+                         <span style={{fontWeight : '600' , fontSize : '14px' }} >$<span> {paid}</span></span>
                          <br>
                          </br>
-                         <span style={{fontWeight : '600' , fontSize : '11px' , fontFamily : 'Poppins'}} >($<span>{toPay}</span> left)</span>
+                         <span style={{fontWeight : '600' , fontSize : '11px'}} >($<span>{toPay}</span> left)</span>
                     </span>
                    
                 </TableCell>
@@ -112,7 +104,7 @@ export const WeddingRow = (props) =>
                 </TableCell>
                 <TableCell align="center">
                     <img src={Vector} ></img>
-                    <span style={{fontWeight : '600' , fontSize : '12px' , fontFamily : 'Poppins'}}>
+                    <span style={{fontWeight : '600' , fontSize : '12px'}}>
                      <span style={{color : '#41ADFF'}}>$<span>{paid}</span>
                       /</span>
                       <span style={{color : '#6E75F5'}}>$<span>{wedding.price}</span></span><br>

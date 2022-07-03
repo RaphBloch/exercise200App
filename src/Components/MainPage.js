@@ -16,7 +16,7 @@ import PropTypes from "prop-types";
 import { SearchAndFilter  } from "./SearchAndFilter/SearchAndFilter";
 import Excel from '../assets/Excel.png';
 import { Legend} from "./Legend/Legend";
-import { weddings } from "../Data/weddingsData";
+import { weddings } from "../mocks/weddingsData";
 import {WeddingTable} from "./Table/WeddingsTable";
 import { GlobalData  } from "./GlobalData/GlobalData";
 
